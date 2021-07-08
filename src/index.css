@@ -17,10 +17,14 @@ code {
 }
 
 #root {
-  --success-color: #00b359;
+  --success-color: #4dffa6;
+  --success-color-back: rgba(77, 255, 166, 0.22);
   --error-color: #ff1a1a;
+  --error-color-back: rgba(255, 26, 26, 0.3);
   --warning-color: #ffcc00;
+  --warning-color-back: rgba(255, 204, 0, 0.26);
   --information-color: #0080ff;
+  --information-color-back: rgba(0, 127, 255, 0.19);
   --top-button-margin: 2em;
   --between-button-margin: 2em 1em;
   --padding-button: 16px 32px;

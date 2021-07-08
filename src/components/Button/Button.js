@@ -5,7 +5,7 @@ function Button({notify}) {
 
   return (
     <div className="button">
-      <button className={`button-${notify.type} button-item`}>{notify.title}</button>
+      <button className={`button-${notify.type} button-item`}>{notify.type}</button>
     </div>
   );
 }
