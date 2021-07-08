@@ -3,6 +3,14 @@
   border-radius: .5em;
   flex-direction: row;
   padding: 2px;
+  animation: slideFromTop 0.7s;
+  animation-fill-mode: forwards;
+  background-color: #fff;
+}
+
+.notification-close {
+  animation: slideToTop 0.7s;
+  animation-fill-mode: forwards;
 }
 
 .notification-item {
@@ -13,7 +21,7 @@
 }
 
 .notification-title {
-  margin-left: -4em;
+  margin-left: -3.8em;
   flex-grow: 9;
   text-align: left;
   font-weight: bold;
@@ -30,6 +38,7 @@
   flex-grow: 1;
   text-align: right;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .notification-icon {
@@ -74,4 +83,24 @@
 
 .notification-icon_information {
   color: var(--information-color);
+}
+
+@keyframes slideFromTop {
+  0% {
+    margin-top: 120%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes slideToTop {
+  0% {
+    margin-top: 0%;
+  }
+
+  100% {
+    margin-top: 120%;
+  }
 }
