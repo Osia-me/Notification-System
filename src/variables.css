@@ -1,0 +1,15 @@
+.successButton {
+  color: #00b359
+}
+
+.errorButton {
+  color: #ff1a1a
+}
+
+.warningButton {
+  color: #ffcc00
+}
+
+.informationButton {
+  color: #0080ff
+}

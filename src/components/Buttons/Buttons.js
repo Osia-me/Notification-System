@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 import notifications from '../../utils';
+import './Buttons.css';
 
 function Buttons() {
 
