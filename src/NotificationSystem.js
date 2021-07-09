@@ -2,9 +2,7 @@ import React, { createContext, useReducer } from 'react';
 import Notification from './components/Notification/Notification';
 import './NotificationSystem.css';
 
-import notifications from './utils';
-
-const NotificationContext = createContext();
+export const NotificationContext = createContext([]);
 
 function NotificationSystem({children}) {
 
@@ -17,7 +15,7 @@ function NotificationSystem({children}) {
       default:
         return state
     }
-  }, [notifications]);
+  }, []);
 
 
   return (

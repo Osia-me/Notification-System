@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
 import './Button.css';
-import NotificationSystem from '../../NotificationSystem';
+import { NotificationContext } from '../../NotificationSystem';
 
 function Button({notify}) {
-
-  const dispatch = useContext(NotificationSystem);
+  const dispatch = useContext(NotificationContext);
 
   const HandleCreateNotification = () => {
-    console.log("here")
     dispatch({
+      id: notify.id,
       type: 'ADD_NOTIFICATION',
       payload: {
         type: notify.type,
